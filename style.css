@@ -1,1 +1,357 @@
+/* ===========================
+   PUNJABI PEHRAWA
+   PREMIUM BLACK & GOLD THEME
+=========================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d0d0d;
+color:#fff;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#000;
+border-bottom:1px solid #b8860b;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#fff;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#d4af37;
+}
+
+nav a{
+text-decoration:none;
+color:#fff;
+margin:0 18px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.icons i{
+font-size:20px;
+margin-left:20px;
+cursor:pointer;
+color:#fff;
+transition:.3s;
+}
+
+.icons i:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("images/banner.jpg") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:700;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+section h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+/* CATEGORY */
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#161616;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+border:1px solid #333;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+text-align:center;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.product{
+background:#161616;
+border-radius:15px;
+overflow:hidden;
+text-align:center;
+border:1px solid #333;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+border-color:#d4af37;
+}
+
+.product img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.product h3{
+margin-top:18px;
+}
+
+.product p{
+color:#d4af37;
+font-size:22px;
+margin:15px 0;
+}
+
+.product button{
+padding:12px 35px;
+border:none;
+background:#d4af37;
+color:#000;
+font-weight:700;
+border-radius:30px;
+cursor:pointer;
+margin-bottom:25px;
+transition:.3s;
+}
+
+.product button:hover{
+background:#fff;
+}
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about p{
+font-size:18px;
+color:#ddd;
+line-height:1.8;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+font-size:20px;
+margin:15px 0;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#000;
+padding:25px;
+text-align:center;
+border-top:1px solid #d4af37;
+}
+
+footer p{
+color:#aaa;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+background:#d4af37;
+border-radius:20px;
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+.card,
+.product{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+padding:15px 5%;
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:70px 5%;
+}
+
+section h2{
+font-size:30px;
+}
+
+.logo{
+font-size:24px;
+}
+
+.product img{
+height:260px;
+}
+
+.card img{
+height:220px;
+}
+
+}
