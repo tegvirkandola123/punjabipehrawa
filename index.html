@@ -7,90 +7,167 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
-body{background:#000;color:#fff;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+text-align:center;
+}
+
 header{
 background:#111;
-padding:25px;
-text-align:center;
+padding:40px 20px;
 border-bottom:2px solid gold;
 }
-header h1{
+
+.logo{
+width:180px;
+height:auto;
+margin-bottom:20px;
+}
+
+h1{
 color:gold;
-font-size:40px;
+font-size:42px;
+margin-bottom:8px;
 }
-header h3{
-margin-top:10px;
-font-weight:400;
-color:#fff;
+
+.by{
+font-size:22px;
+color:#ffffff;
+font-weight:500;
 }
+
 .hero{
-padding:70px 20px;
-text-align:center;
+padding:60px 20px;
 }
+
 .hero h2{
+font-size:34px;
 color:gold;
-font-size:32px;
 margin-bottom:15px;
 }
+
 .hero p{
 font-size:18px;
-margin-bottom:30px;
+margin-bottom:35px;
 }
+
 .btn{
 display:inline-block;
 padding:15px 35px;
 background:#25D366;
-color:white;
-border-radius:40px;
+color:#fff;
 text-decoration:none;
+border-radius:40px;
+font-size:18px;
 font-weight:bold;
+transition:.3s;
 }
+
+.btn:hover{
+background:#1da851;
+}
+
 .social{
-margin-top:45px;
+margin-top:50px;
 display:flex;
 justify-content:center;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
 }
+
 .social a{
 width:70px;
 height:70px;
-border-radius:50%;
+background:#111;
 border:2px solid gold;
+border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
 font-size:30px;
 color:gold;
-background:#111;
 text-decoration:none;
 transition:.3s;
 }
+
 .social a:hover{
 background:gold;
-color:black;
+color:#000;
+transform:scale(1.1);
 }
-footer{
+ footer{
 margin-top:80px;
-background:#111;
 padding:25px;
-text-align:center;
+background:#111;
 border-top:2px solid gold;
 }
+
+footer h3{
+color:gold;
+margin-bottom:10px;
+}
+
+footer p{
+margin:8px 0;
+font-size:16px;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:140px;
+}
+
+h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.social a{
+width:60px;
+height:60px;
+font-size:24px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
+<img src="images/logo.png" class="logo" alt="Punjabi Pehrawa Logo">
+
 <h1>Punjabi Pehrawa</h1>
-<h3>By Jaspreet Kandola</h3>
+
+<p class="by">By Jaspreet Kandola</p>
+
 </header>
 
 <section class="hero">
@@ -99,7 +176,9 @@ border-top:2px solid gold;
 
 <p>Premium Ladies Suit Collection</p>
 
-<a class="btn" href="https://wa.me/918264993080" target="_blank">
+<a class="btn"
+href="https://wa.me/918264993080"
+target="_blank">
 Order on WhatsApp
 </a>
 
@@ -129,11 +208,11 @@ Order on WhatsApp
 
 <h3>Punjabi Pehrawa</h3>
 
-<p>WhatsApp : +91 82649 93080</p>
+<p>WhatsApp: +91 82649 93080</p>
 
-<p><b>Powered by Jujhar Enterprises</b></p>
+<p><strong>Powered by Jujhar Enterprises</strong></p>
 
 </footer>
 
 </body>
-</html>
+</html> 
